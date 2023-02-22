@@ -33,7 +33,7 @@
         <p>Введите значение в поле ниже:</p>
 
         <div class="mb-3">
-            <select id="ConvertFrom" onchange="ConvertValue(document.getElementById('ConvertFrom').value)">
+            <select id="convert-from" onchange="ConvertValue(document.getElementById('convert-input').value)">
                 <option value="Kilograms">Килограмм</option>
                 <option value="Grams">Грамм</option>
                 <option value="Pounds">Фунт</option>
@@ -43,13 +43,13 @@
         </div>
 
         <div class="mb-3">
-            <input id="ConvertFrom" type="number" oninput="ConvertValue(this.value)" onchange="ConvertValue(this.value)" />
+            <input id="convert-input" type="number" oninput="ConvertValue(this.value)" onchange="ConvertValue(this.value)" />
         </div>
 
 
         <div class="mb-3">
-            Перевод в
-            <select id="ConvertTo" onchange="ConvertValue(document.getElementById('ConvertFrom').value)">
+            Конвертация в
+            <select id="convert-To" onchange="ConvertValue(document.getElementById('convert-input').value)">
                 <option value="Kilograms">Килограмм</option>
                 <option value="Grams">Грамм</option>
                 <option value="Pounds">Фунт</option>
@@ -58,7 +58,7 @@
             </select>:
         </div>
         <div class="mb-3">
-            <span id="Result"></span>
+            <span id="result"></span>
         </div>
     </div>
 </body>
